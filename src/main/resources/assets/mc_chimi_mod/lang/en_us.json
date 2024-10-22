@@ -1,4 +1,6 @@
 {
   "item.mc_chimi_mod.salt": "Salt",
-  "item.mc_chimi_mod.butter": "Butter"
+  "item.mc_chimi_mod.butter": "Butter",
+  "creativetabs.chimi_mod_tab": "Chimi MOD",
+  "creativetabs.chimi_mod_tab_extra": "Chimi MOD Extra"
 }

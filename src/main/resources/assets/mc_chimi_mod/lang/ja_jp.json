@@ -1,4 +1,6 @@
 {
   "item.mc_chimi_mod.salt": "塩",
-  "item.mc_chimi_mod.butter": "バター"
+  "item.mc_chimi_mod.butter": "バター",
+  "creativetabs.chimi_mod_tab": "ちみMOD",
+  "creativetabs.chimi_mod_tab_extra": "ちみMOD Extra"
 }
