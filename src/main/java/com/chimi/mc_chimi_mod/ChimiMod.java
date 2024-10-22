@@ -39,6 +39,7 @@ public class ChimiMod {
         // 材料タブへ追加
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ChmiModItem.SALT);
+            event.accept(ChmiModItem.BUTTER);
         }
     }
 
