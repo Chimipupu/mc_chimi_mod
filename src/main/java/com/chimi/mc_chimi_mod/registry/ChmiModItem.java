@@ -1,6 +1,7 @@
 package com.chimi.mc_chimi_mod.registry;
 
 import com.chimi.mc_chimi_mod.ChimiMod;
+import com.chimi.mc_chimi_mod.item.ChimiModDrink;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
@@ -76,6 +77,10 @@ public class ChmiModItem {
 //                    .effect(new MobEffectInstance(MobEffects.WIND_CHARGED, 600 * 120), 1.0f)
 //                    .effect(new MobEffectInstance(MobEffects.WITHER, 600 * 120), 1.0f)
                     .build())));
+
+    // 飲み物
+    public static final RegistryObject<Item> PORTION = ITEMS.register("portion",
+            () ->new ChimiModDrink(new Item.Properties()));
 
     // レジスタをイベントバスに登録
     public static void register(IEventBus eventBus){

@@ -7,5 +7,4 @@
 
 ## MOD概要
 ![mod](doc/mod_tab.png)
-
  <!-- ![mod_read_img](doc/mod_read.png) -->
