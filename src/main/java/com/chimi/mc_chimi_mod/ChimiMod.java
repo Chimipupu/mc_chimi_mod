@@ -1,5 +1,6 @@
 package com.chimi.mc_chimi_mod;
 
+import com.chimi.mc_chimi_mod.registry.ChmiModItem;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -17,8 +18,14 @@ public class ChimiMod {
 
     public ChimiMod(FMLJavaModLoadingContext context) {
         IEventBus modEventBus = context.getModEventBus();
+
         modEventBus.addListener(this::commonSetup);
+
+        // 追加アイテムのレジストリをイベントバスに登録
+        ChmiModItem.register(modEventBus);
+
         MinecraftForge.EVENT_BUS.register(this);
+
         modEventBus.addListener(this::addCreative);
     }
 
