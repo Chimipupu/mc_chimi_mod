@@ -1,5 +1,6 @@
 package com.chimi.mc_chimi_mod;
 
+import com.chimi.mc_chimi_mod.registry.ChimiModBlock;
 import com.chimi.mc_chimi_mod.registry.ChimiModTabs;
 import com.chimi.mc_chimi_mod.registry.ChmiModItem;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -26,6 +27,7 @@ public class ChimiMod {
         // 追加アイテムのレジストリをイベントバスに登録
         ChmiModItem.register(modEventBus);
         ChimiModTabs.register(modEventBus);
+        ChimiModBlock.register(modEventBus);
         MinecraftForge.EVENT_BUS.register(this);
 
         modEventBus.addListener(this::addCreative);

@@ -30,6 +30,7 @@ public class ChimiModTabs {
                         pOutput.accept(ChmiModItem.DAMAGE_BOOST_POTATO.get());
                         pOutput.accept(ChmiModItem.ALL_BOOST_POTATO.get());
                         pOutput.accept(ChmiModItem.PORTION.get());
+                        pOutput.accept(ChimiModBlock.SALT_BLOCK.get());
                     })
                     // 検索バー
                     .withSearchBar()
@@ -59,6 +60,7 @@ public class ChimiModTabs {
                         pOutput.accept(ChmiModItem.DAMAGE_BOOST_POTATO.get());
                         pOutput.accept(ChmiModItem.ALL_BOOST_POTATO.get());
                         pOutput.accept(ChmiModItem.PORTION.get());
+                        pOutput.accept(ChimiModBlock.SALT_BLOCK.get());
                     })
                     // 検索バー
                     .withSearchBar()
