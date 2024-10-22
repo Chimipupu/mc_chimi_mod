@@ -1,6 +1,7 @@
 package com.chimi.mc_chimi_mod;
 
 import com.chimi.mc_chimi_mod.registry.ChmiModItem;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -33,8 +34,12 @@ public class ChimiMod {
         // TODO
     }
 
+    // クリエイティブへのアイテム追加
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        // TODO
+        // 材料タブへ追加
+        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ChmiModItem.SALT);
+        }
     }
 
     @SubscribeEvent
