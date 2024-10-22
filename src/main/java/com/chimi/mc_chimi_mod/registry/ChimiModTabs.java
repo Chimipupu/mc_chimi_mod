@@ -3,9 +3,7 @@ package com.chimi.mc_chimi_mod.registry;
 import com.chimi.mc_chimi_mod.ChimiMod;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
@@ -28,6 +26,9 @@ public class ChimiModTabs {
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ChmiModItem.SALT.get());
                         pOutput.accept(ChmiModItem.BUTTER.get());
+                        pOutput.accept(ChmiModItem.HALTH_BOOST_POTATO.get());
+                        pOutput.accept(ChmiModItem.DAMAGE_BOOST_POTATO.get());
+                        pOutput.accept(ChmiModItem.ALL_BOOST_POTATO.get());
                     })
                     // 検索バー
                     .withSearchBar()
@@ -36,10 +37,7 @@ public class ChimiModTabs {
 //                            ChimiMod.MOD_ID, "textures/gui/chimimodtab_bg.png"))
 
                     // ラベルの色
-//                    .withLabelColor(Color.WHITE.getRGB())   // 白
-//                    .withLabelColor(Color.MAGENTA.getRGB()) // 紫
                     .withLabelColor(Color.RED.getRGB())     // 赤
-//                    .withLabelColor(Color.GREEN.getRGB())   // 緑
 
                     // カーソル選択時のハイライト
                     .withSlotColor(new Color(255,50,255,55).getRGB())    // 半透明な紫
@@ -56,14 +54,14 @@ public class ChimiModTabs {
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ChmiModItem.SALT.get());
                         pOutput.accept(ChmiModItem.BUTTER.get());
+                        pOutput.accept(ChmiModItem.HALTH_BOOST_POTATO.get());
+                        pOutput.accept(ChmiModItem.DAMAGE_BOOST_POTATO.get());
+                        pOutput.accept(ChmiModItem.ALL_BOOST_POTATO.get());
                     })
                     // 検索バー
                     .withSearchBar()
                     // ラベルの色
-//                    .withLabelColor(Color.WHITE.getRGB())   // 白
                     .withLabelColor(Color.MAGENTA.getRGB()) // 紫
-//                    .withLabelColor(Color.RED.getRGB())     // 赤
-//                    .withLabelColor(Color.GREEN.getRGB())   // 緑
 
                     // カーソル選択時のハイライト
                     .withSlotColor(new Color(255,50,255,55).getRGB())    // 半透明な紫
