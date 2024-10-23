@@ -1,4 +1,4 @@
-package com.chimi.mc_chimi_mod.datagen;
+package com.chimi.mc_chimi_mod.datagen.server;
 
 import com.chimi.mc_chimi_mod.registry.ChimiModBlock;
 import com.chimi.mc_chimi_mod.registry.ChimiModItem;
@@ -39,7 +39,9 @@ public class ChimiModRecipeProvider extends RecipeProvider {
         ShapelessRecipeBuilder.shapeless(pUnpackedCategory, pUnpacked, 9)
                 .requires(pPacked).unlockedBy(getHasName(pPacked), has(pPacked)).save(pRecipeOutput);
         ShapedRecipeBuilder.shaped(pPackedCategory, pPacked).define('#', pUnpacked)
-                .pattern("###").pattern("###").pattern("###")
+                .pattern("###")
+                .pattern("###")
+                .pattern("###")
                 .unlockedBy(getHasName(pUnpacked), has(pUnpacked)).save(pRecipeOutput);
     }
 }

@@ -1,4 +1,4 @@
-package com.chimi.mc_chimi_mod.datagen;
+package com.chimi.mc_chimi_mod.datagen.client;
 
 import com.chimi.mc_chimi_mod.ChimiMod;
 import com.chimi.mc_chimi_mod.registry.ChimiModItem;
