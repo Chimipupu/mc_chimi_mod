@@ -21,19 +21,20 @@ public class ChimiModTabs {
                     // タブ名
                     .title(Component.translatable("creativetabs.chimi_mod_tab"))
                     // アイコン
-                    .icon(ChmiModItem.SALT.get()::getDefaultInstance)
+                    .icon(ChimiModItem.SALT.get()::getDefaultInstance)
                     // アイテム追加
                     .displayItems((pParameters, pOutput) -> {
-                        pOutput.accept(ChmiModItem.RAW_ORIHALCON.get());
-                        pOutput.accept(ChmiModItem.ORIHALCON_INGOT.get());
+                        pOutput.accept(ChimiModItem.RAW_ORIHALCON.get());
+                        pOutput.accept(ChimiModItem.ORIHALCON_INGOT.get());
+                        pOutput.accept(ChimiModBlock.RAW_ORIHALCON_BLOCK.get());
                         pOutput.accept(ChimiModBlock.ORIHALCON_BLOCK.get());
-                        pOutput.accept(ChmiModItem.SALT.get());
+                        pOutput.accept(ChimiModItem.SALT.get());
                         pOutput.accept(ChimiModBlock.SALT_BLOCK.get());
-                        pOutput.accept(ChmiModItem.BUTTER.get());
-                        pOutput.accept(ChmiModItem.HALTH_BOOST_POTATO.get());
-                        pOutput.accept(ChmiModItem.DAMAGE_BOOST_POTATO.get());
-                        pOutput.accept(ChmiModItem.ALL_BOOST_POTATO.get());
-                        pOutput.accept(ChmiModItem.PORTION.get());
+                        pOutput.accept(ChimiModItem.BUTTER.get());
+                        pOutput.accept(ChimiModItem.HALTH_BOOST_POTATO.get());
+                        pOutput.accept(ChimiModItem.DAMAGE_BOOST_POTATO.get());
+                        pOutput.accept(ChimiModItem.ALL_BOOST_POTATO.get());
+                        pOutput.accept(ChimiModItem.PORTION.get());
                     })
                     // 検索バー
                     .withSearchBar()
@@ -54,19 +55,20 @@ public class ChimiModTabs {
                     // タブ名
                     .title(Component.translatable("creativetabs.chimi_mod_tab_extra"))
                     // アイコン
-                    .icon(ChmiModItem.BUTTER.get()::getDefaultInstance)
+                    .icon(ChimiModItem.BUTTER.get()::getDefaultInstance)
                     // アイテム追加
                     .displayItems((pParameters, pOutput) -> {
-                        pOutput.accept(ChmiModItem.RAW_ORIHALCON.get());
-                        pOutput.accept(ChmiModItem.ORIHALCON_INGOT.get());
+                        pOutput.accept(ChimiModItem.RAW_ORIHALCON.get());
+                        pOutput.accept(ChimiModItem.ORIHALCON_INGOT.get());
+                        pOutput.accept(ChimiModBlock.RAW_ORIHALCON_BLOCK.get());
                         pOutput.accept(ChimiModBlock.ORIHALCON_BLOCK.get());
-                        pOutput.accept(ChmiModItem.SALT.get());
+                        pOutput.accept(ChimiModItem.SALT.get());
                         pOutput.accept(ChimiModBlock.SALT_BLOCK.get());
-                        pOutput.accept(ChmiModItem.BUTTER.get());
-                        pOutput.accept(ChmiModItem.HALTH_BOOST_POTATO.get());
-                        pOutput.accept(ChmiModItem.DAMAGE_BOOST_POTATO.get());
-                        pOutput.accept(ChmiModItem.ALL_BOOST_POTATO.get());
-                        pOutput.accept(ChmiModItem.PORTION.get());
+                        pOutput.accept(ChimiModItem.BUTTER.get());
+                        pOutput.accept(ChimiModItem.HALTH_BOOST_POTATO.get());
+                        pOutput.accept(ChimiModItem.DAMAGE_BOOST_POTATO.get());
+                        pOutput.accept(ChimiModItem.ALL_BOOST_POTATO.get());
+                        pOutput.accept(ChimiModItem.PORTION.get());
                     })
                     // 検索バー
                     .withSearchBar()

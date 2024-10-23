@@ -2,7 +2,7 @@ package com.chimi.mc_chimi_mod;
 
 import com.chimi.mc_chimi_mod.registry.ChimiModBlock;
 import com.chimi.mc_chimi_mod.registry.ChimiModTabs;
-import com.chimi.mc_chimi_mod.registry.ChmiModItem;
+import com.chimi.mc_chimi_mod.registry.ChimiModItem;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -25,7 +25,7 @@ public class ChimiMod {
         modEventBus.addListener(this::commonSetup);
 
         // 追加アイテムのレジストリをイベントバスに登録
-        ChmiModItem.register(modEventBus);
+        ChimiModItem.register(modEventBus);
         ChimiModTabs.register(modEventBus);
         ChimiModBlock.register(modEventBus);
         MinecraftForge.EVENT_BUS.register(this);
@@ -41,10 +41,10 @@ public class ChimiMod {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         // 材料タブへ追加
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ChmiModItem.SALT);
-            event.accept(ChmiModItem.BUTTER);
-            event.accept(ChmiModItem.RAW_ORIHALCON);
-            event.accept(ChmiModItem.ORIHALCON_INGOT);
+            event.accept(ChimiModItem.SALT);
+            event.accept(ChimiModItem.BUTTER);
+            event.accept(ChimiModItem.RAW_ORIHALCON);
+            event.accept(ChimiModItem.ORIHALCON_INGOT);
         }
     }
 

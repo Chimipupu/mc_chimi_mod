@@ -2,7 +2,7 @@ package com.chimi.mc_chimi_mod.datagen;
 
 import com.chimi.mc_chimi_mod.ChimiMod;
 import com.chimi.mc_chimi_mod.registry.ChimiModBlock;
-import com.chimi.mc_chimi_mod.registry.ChmiModItem;
+import com.chimi.mc_chimi_mod.registry.ChimiModItem;
 import net.minecraft.data.PackOutput;
 import net.minecraftforge.common.data.LanguageProvider;
 
@@ -16,18 +16,18 @@ public class JAJPLanguageProvider extends LanguageProvider {
     @Override
     protected void addTranslations() {
         // 素材
-        addItem(ChmiModItem.RAW_ORIHALCON, "オリハルコンの欠片");
-        addItem(ChmiModItem.ORIHALCON_INGOT, "オリハルコンのインゴット");
-        addItem(ChmiModItem.SALT, "塩");
-        addItem(ChmiModItem.BUTTER, "バター");
+        addItem(ChimiModItem.RAW_ORIHALCON, "オリハルコンの欠片");
+        addItem(ChimiModItem.ORIHALCON_INGOT, "オリハルコンのインゴット");
+        addItem(ChimiModItem.SALT, "塩");
+        addItem(ChimiModItem.BUTTER, "バター");
 
         // 食べ物
-        addItem(ChmiModItem.HALTH_BOOST_POTATO, "体力増強ポテト");
-        addItem(ChmiModItem.DAMAGE_BOOST_POTATO, "ダメージ増強ポテト");
-        addItem(ChmiModItem.ALL_BOOST_POTATO, "神話のポテト");
+        addItem(ChimiModItem.HALTH_BOOST_POTATO, "体力増強ポテト");
+        addItem(ChimiModItem.DAMAGE_BOOST_POTATO, "ダメージ増強ポテト");
+        addItem(ChimiModItem.ALL_BOOST_POTATO, "神話のポテト");
 
         // 飲み物
-        addItem(ChmiModItem.PORTION, "神話のポーション");
+        addItem(ChimiModItem.PORTION, "神話のポーション");
 
         // ブロック
         addBlock(ChimiModBlock.ORIHALCON_BLOCK, "オリハルコンブロック");

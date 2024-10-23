@@ -12,7 +12,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 // アイテムの追加
-public class ChmiModItem {
+public class ChimiModItem {
     // レジストリ作成
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, ChimiMod.MOD_ID);

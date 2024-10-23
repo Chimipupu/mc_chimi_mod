@@ -37,7 +37,7 @@ public class ChimiModBlock {
         // ブロックをレジストリに登録
         RegistryObject<T> block = BLOCKS.register(name, supplier);
         // ブロックをアイテムとしてレジストリに登録
-        ChmiModItem.ITEMS.register(name,
+        ChimiModItem.ITEMS.register(name,
                 () -> new BlockItem(block.get(), new Item.Properties()));
         return block;
     }

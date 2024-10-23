@@ -2,7 +2,7 @@ package com.chimi.mc_chimi_mod.datagen;
 
 import com.chimi.mc_chimi_mod.ChimiMod;
 import com.chimi.mc_chimi_mod.registry.ChimiModBlock;
-import com.chimi.mc_chimi_mod.registry.ChmiModItem;
+import com.chimi.mc_chimi_mod.registry.ChimiModItem;
 import net.minecraft.data.PackOutput;
 import net.minecraftforge.common.data.LanguageProvider;
 
@@ -17,18 +17,18 @@ public class ENUSLanguageProvider extends LanguageProvider {
     @Override
     protected void addTranslations() {
         // 素材
-        addItem(ChmiModItem.RAW_ORIHALCON, "raw orihalcon");
-        addItem(ChmiModItem.ORIHALCON_INGOT, "orihalcon ingot");
-        addItem(ChmiModItem.SALT, "Salt");
-        addItem(ChmiModItem.BUTTER, "Butter");
+        addItem(ChimiModItem.RAW_ORIHALCON, "raw orihalcon");
+        addItem(ChimiModItem.ORIHALCON_INGOT, "orihalcon ingot");
+        addItem(ChimiModItem.SALT, "Salt");
+        addItem(ChimiModItem.BUTTER, "Butter");
 
         // 食べ物
-        addItem(ChmiModItem.HALTH_BOOST_POTATO, "Health Boost Potato");
-        addItem(ChmiModItem.DAMAGE_BOOST_POTATO, "Damage Boost Potato");
-        addItem(ChmiModItem.ALL_BOOST_POTATO, "God Potato");
+        addItem(ChimiModItem.HALTH_BOOST_POTATO, "Health Boost Potato");
+        addItem(ChimiModItem.DAMAGE_BOOST_POTATO, "Damage Boost Potato");
+        addItem(ChimiModItem.ALL_BOOST_POTATO, "God Potato");
 
         // 飲み物
-        addItem(ChmiModItem.PORTION, "God Portion");
+        addItem(ChimiModItem.PORTION, "God Portion");
 
         // ブロック
         addBlock(ChimiModBlock.ORIHALCON_BLOCK, "Orihalcon Block");
