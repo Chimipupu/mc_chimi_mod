@@ -1,9 +1,9 @@
-# mc_chimi_mod (MDK@Forge)
-I'll be migrating this mod to Neoforge soon (goodbye👋 Forge👋).
+# mc_chimi_mod (MDK@NeoForge)
+NeoForgeでのマイクラMOD開発リポジトリ🥳
 
 ## 開発環境(MDK)
  - MC ... MineCraft Java 1.21.1
- - MDK ... MineCraft Forge 1.21.1-52.0.22
+ - MDK ... NeoForge 1.21.1.72
 
 ## MOD概要
 ![mod](doc/mod_tab.png)
