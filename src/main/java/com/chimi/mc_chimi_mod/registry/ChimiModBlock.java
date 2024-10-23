@@ -28,6 +28,9 @@ public class ChimiModBlock {
             // ダイアブロックで音はアメジスト
             ()->new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.DIAMOND_BLOCK).sound(SoundType.AMETHYST)));
 
+    public static final RegistryObject<Block> RAW_ORIHALCON_BLOCK = registerBlockWithItem("raw_orihalcon_block",
+            // ダイアブロックで音はアメジスト
+            ()->new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.DIAMOND_BLOCK).sound(SoundType.AMETHYST)));
 
     // ブロックのアイテム化＆レジストリ登録
     private static <T extends Block> RegistryObject<T> registerBlockWithItem(String name, Supplier<T> supplier) {

@@ -1,0 +1,15 @@
+{
+  "block.mc_chimi_mod.orihalcon_block": "Orihalcon Block",
+  "block.mc_chimi_mod.raw_orihalcon_block": "Raw Orihalcon Block",
+  "block.mc_chimi_mod.salt_block": "Salt Block",
+  "creativetabs.chimi_mod_tab": "Chimi MOD",
+  "creativetabs.chimi_mod_tab_extra": "Chimi MOD Extra",
+  "item.mc_chimi_mod.all_boost_potato": "God Potato",
+  "item.mc_chimi_mod.butter": "Butter",
+  "item.mc_chimi_mod.damage_boost_potato": "Damage Boost Potato",
+  "item.mc_chimi_mod.halth_boost_potato": "Health Boost Potato",
+  "item.mc_chimi_mod.orihalcon_ingot": "orihalcon ingot",
+  "item.mc_chimi_mod.portion": "God Portion",
+  "item.mc_chimi_mod.raw_orihalcon": "raw orihalcon",
+  "item.mc_chimi_mod.salt": "Salt"
+}
