@@ -6,7 +6,6 @@
  - MDK ... MineCraft Forge 1.21.1
 
 ## MOD概要
-<!-- ![mod](doc/mod_tab.png) -->
-![gif](doc/info.gif)
-
+![mod](doc/mod_tab.png)
+<!-- ![gif](doc/info.gif) -->
  <!-- ![mod_read_img](doc/mod_read.png) -->
