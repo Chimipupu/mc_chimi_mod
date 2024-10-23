@@ -43,6 +43,8 @@ public class ChimiMod {
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ChmiModItem.SALT);
             event.accept(ChmiModItem.BUTTER);
+            event.accept(ChmiModItem.RAW_ORIHALCON);
+            event.accept(ChmiModItem.ORIHALCON_INGOT);
         }
     }
 

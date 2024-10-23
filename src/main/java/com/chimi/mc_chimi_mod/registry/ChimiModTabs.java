@@ -24,13 +24,16 @@ public class ChimiModTabs {
                     .icon(ChmiModItem.SALT.get()::getDefaultInstance)
                     // アイテム追加
                     .displayItems((pParameters, pOutput) -> {
+                        pOutput.accept(ChmiModItem.RAW_ORIHALCON.get());
+                        pOutput.accept(ChmiModItem.ORIHALCON_INGOT.get());
+                        pOutput.accept(ChimiModBlock.ORIHALCON_BLOCK.get());
                         pOutput.accept(ChmiModItem.SALT.get());
+                        pOutput.accept(ChimiModBlock.SALT_BLOCK.get());
                         pOutput.accept(ChmiModItem.BUTTER.get());
                         pOutput.accept(ChmiModItem.HALTH_BOOST_POTATO.get());
                         pOutput.accept(ChmiModItem.DAMAGE_BOOST_POTATO.get());
                         pOutput.accept(ChmiModItem.ALL_BOOST_POTATO.get());
                         pOutput.accept(ChmiModItem.PORTION.get());
-                        pOutput.accept(ChimiModBlock.SALT_BLOCK.get());
                     })
                     // 検索バー
                     .withSearchBar()
@@ -54,13 +57,16 @@ public class ChimiModTabs {
                     .icon(ChmiModItem.BUTTER.get()::getDefaultInstance)
                     // アイテム追加
                     .displayItems((pParameters, pOutput) -> {
+                        pOutput.accept(ChmiModItem.RAW_ORIHALCON.get());
+                        pOutput.accept(ChmiModItem.ORIHALCON_INGOT.get());
+                        pOutput.accept(ChimiModBlock.ORIHALCON_BLOCK.get());
                         pOutput.accept(ChmiModItem.SALT.get());
+                        pOutput.accept(ChimiModBlock.SALT_BLOCK.get());
                         pOutput.accept(ChmiModItem.BUTTER.get());
                         pOutput.accept(ChmiModItem.HALTH_BOOST_POTATO.get());
                         pOutput.accept(ChmiModItem.DAMAGE_BOOST_POTATO.get());
                         pOutput.accept(ChmiModItem.ALL_BOOST_POTATO.get());
                         pOutput.accept(ChmiModItem.PORTION.get());
-                        pOutput.accept(ChimiModBlock.SALT_BLOCK.get());
                     })
                     // 検索バー
                     .withSearchBar()

@@ -25,6 +25,12 @@ public class ChmiModItem {
     public static final RegistryObject<Item> BUTTER = ITEMS.register("butter",
             () ->new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> RAW_ORIHALCON = ITEMS.register("raw_orihalcon",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> ORIHALCON_INGOT = ITEMS.register("orihalcon_ingot",
+            () -> new Item(new Item.Properties()));
+
     // 食べ物系
     public static final RegistryObject<Item> HALTH_BOOST_POTATO = ITEMS.register("halth_boost_potato",
             () ->new Item(new Item.Properties().food(new FoodProperties.Builder()
@@ -66,16 +72,6 @@ public class ChmiModItem {
                     .effect(new MobEffectInstance(MobEffects.INVISIBILITY, 600 * 120), 1.0f)
                     .effect(new MobEffectInstance(MobEffects.LUCK, 600 * 120), 1.0f)
                     .effect(new MobEffectInstance(MobEffects.WATER_BREATHING, 600 * 120), 1.0f)
-//                    .effect(new MobEffectInstance(MobEffects.ABSORPTION, 600 * 120), 1.0f)
-//                    .effect(new MobEffectInstance(MobEffects.BAD_OMEN, 600 * 120), 1.0f)
-//                    .effect(new MobEffectInstance(MobEffects.BLINDNESS, 600 * 120), 1.0f)
-//                    .effect(new MobEffectInstance(MobEffects.CONFUSION, 600 * 120), 1.0f)
-//                    .effect(new MobEffectInstance(MobEffects.DARKNESS, 600 * 120), 1.0f)
-//                    .effect(new MobEffectInstance(MobEffects.HARM, 600 * 120), 1.0f)
-//                    .effect(new MobEffectInstance(MobEffects.POISON, 600 * 120), 1.0f)
-//                    .effect(new MobEffectInstance(MobEffects.WEAVING, 600 * 120), 1.0f)
-//                    .effect(new MobEffectInstance(MobEffects.WIND_CHARGED, 600 * 120), 1.0f)
-//                    .effect(new MobEffectInstance(MobEffects.WITHER, 600 * 120), 1.0f)
                     .build())));
 
     // 飲み物
