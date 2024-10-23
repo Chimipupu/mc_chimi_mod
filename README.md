@@ -1,5 +1,4 @@
 # mc_chimi_mod (MDK@Forge)
-I'll be migrating this mod to Neoforge soon (goodbye👋 Forge👋).
 
 ## 開発環境(MDK)
  - MC ... MineCraft Java 1.21.1
