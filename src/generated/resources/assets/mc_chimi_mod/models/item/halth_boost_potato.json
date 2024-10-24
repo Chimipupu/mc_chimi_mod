@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "mc_chimi_mod:item/halth_boost_potato"
+  }
+}

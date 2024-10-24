@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "mc_chimi_mod:block/salt_block"
+    }
+  }
+}
