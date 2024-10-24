@@ -8,5 +8,5 @@ NeoForgeでのマイクラMOD開発リポジトリ🥳
 ## MOD概要
 ![alt text](doc/mod_read.png)
 <!-- ![mod](doc/mod_tab.png) -->
+<!-- ![mod_read_img](doc/mod_read.png) -->
 <!-- ![gif](doc/info.gif) -->
- <!-- ![mod_read_img](doc/mod_read.png) -->>

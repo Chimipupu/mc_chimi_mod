@@ -1,5 +1,9 @@
 package com.chimi.mc_chimi_mod;
 
+import net.minecraft.world.damagesource.DamageEffects;
+import net.minecraft.world.effect.MobEffect;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -47,15 +51,65 @@ public class ChimiMod
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MODID);
 
-    // アイテム作成
+    // [アイテム作成]
+    // ブロック
     public static final DeferredBlock<Block> ORIHALCON_BLOCK =
             BLOCKS.registerSimpleBlock("orihalcon_block", BlockBehaviour.Properties.of().mapColor(MapColor.STONE));
     public static final DeferredItem<BlockItem> ORIHALCON_BLOCK_ITEM =
             ITEMS.registerSimpleBlockItem("orihalcon_block", ORIHALCON_BLOCK);
 
+    public static final DeferredBlock<Block> RAW_ORIHALCON_BLOCK =
+            BLOCKS.registerSimpleBlock("raw_orihalcon_block", BlockBehaviour.Properties.of().mapColor(MapColor.STONE));
+    public static final DeferredItem<BlockItem> RAW_ORIHALCON_BLOCK_ITEM =
+            ITEMS.registerSimpleBlockItem("raw_orihalcon_block", RAW_ORIHALCON_BLOCK);
+
+    // 素材
     public static final DeferredItem<Item> RAW_ORIHALCON =
-            ITEMS.registerSimpleItem("raw_orihalcon", new Item.Properties().food(new FoodProperties.Builder()
-            .alwaysEdible().nutrition(1).saturationModifier(2f).build()));
+            ITEMS.registerSimpleItem("raw_orihalcon", new Item.Properties());
+
+    // 食べ物
+    public static final DeferredItem<Item> ORIHALCON_INGOT =
+            ITEMS.registerSimpleItem("orihalcon_ingot", new Item.Properties());
+
+    public static final DeferredItem<Item> HALTH_BOOST_POTATO =
+            ITEMS.registerSimpleItem("halth_boost_potato", new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .alwaysEdible() // いつでも食べれる
+                            .fast() // 早く食べる
+                            .nutrition(6) // 満腹度
+                            .saturationModifier(2f) // 隠し満腹度
+                            // 効果、効果時間(1時間= 600 * 120 / 20)、確率(1.0f=100%)
+                            .effect(new MobEffectInstance(MobEffects.HEALTH_BOOST,600 * 120), 1.0f)
+                            .build()));
+
+    public static final DeferredItem<Item> DAMAGE_BOOST_POTATO =
+            ITEMS.registerSimpleItem("damage_boost_potato", new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .alwaysEdible() // いつでも食べれる
+                            .fast() // 早く食べる
+                            .nutrition(6) // 満腹度
+                            .saturationModifier(2f) // 隠し満腹度
+                            // 効果、効果時間(1時間= 600 * 120 / 20)、確率(1.0f=100%)
+                            .effect(new MobEffectInstance(MobEffects.DAMAGE_BOOST,600 * 120), 1.0f)
+                            .build()));
+
+    public static final DeferredItem<Item> ALL_BOOST_POTATO =
+            ITEMS.registerSimpleItem("all_boost_potato", new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                    .alwaysEdible() // いつでも食べれる
+                    .fast() // 早く食べる
+                    .nutrition(6) // 満腹度
+                    .saturationModifier(2f) // 隠し満腹度
+                    // 効果、効果時間(1時間= 600 * 120 / 20)、確率(1.0f=100%)
+                    .effect(new MobEffectInstance(MobEffects.HEALTH_BOOST,600 * 120), 1.0f)
+                    .effect(new MobEffectInstance(MobEffects.DAMAGE_BOOST,600 * 120), 1.0f)
+                    .effect(new MobEffectInstance(MobEffects.CONDUIT_POWER,600 * 120), 1.0f)
+                    .effect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE,600 * 120), 1.0f)
+                    .effect(new MobEffectInstance(MobEffects.HEAL,600 * 120), 1.0f)
+                    .effect(new MobEffectInstance(MobEffects.INVISIBILITY,600 * 120), 1.0f)
+                    .effect(new MobEffectInstance(MobEffects.LUCK,600 * 120), 1.0f)
+                    .effect(new MobEffectInstance(MobEffects.WATER_BREATHING,600 * 120), 1.0f)
+                    .build()));
 
     // クリエイティブタブ作成
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> EXAMPLE_TAB =
@@ -70,6 +124,12 @@ public class ChimiMod
             .displayItems((parameters, output) -> {
                  // クリエイティブタブにアイテム追加
                 output.accept(RAW_ORIHALCON.get());
+                output.accept(ORIHALCON_INGOT.get());
+                output.accept(RAW_ORIHALCON_BLOCK_ITEM.get());
+                output.accept(ORIHALCON_BLOCK_ITEM.get());
+                output.accept(HALTH_BOOST_POTATO.get());
+                output.accept(DAMAGE_BOOST_POTATO.get());
+                output.accept(ALL_BOOST_POTATO.get());
             }).build());
 
     public ChimiMod(IEventBus modEventBus, ModContainer modContainer)
